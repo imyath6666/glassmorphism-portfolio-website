@@ -1,0 +1,221 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-shadow: border-box;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+
+    }
+
+    body {
+      background: linear-gradient(to right, #0D99FA, #05C7F8);
+      color: white;
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
+
+    .content {
+      display: flex ;
+      width:100%;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+    }
+
+    .glass-rect {
+      display: block
+    }
+
+    .nav {
+      display: flex;
+      position: fixed;
+      z-index: 1;
+      width: 100vw;
+      height: 3rem;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-brand {
+      margin: 10px;
+      font-size: 20px;
+    }
+
+    ul {
+      display: block;
+      flex-wrap: flex;
+      margin-left: 10px;
+      margin-top: -2px;
+    }
+
+    li {
+      display: inline-block;
+      font-size: 15px;
+      padding: 6px;
+      margin: 9px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+    }
+
+    li a {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    li:hover,
+    .active {
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, .1);
+      box-shadow: 1px 1px 3px rgba(25, 30, 130, .30);
+      border-left: 1px solid rgba(255, 255, 255, .2);
+      border-top: 1px solid rgba(255, 255, 255, .2);
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .main {
+      margin-top: 25vh;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .title {
+      font-size: 30px;
+      margin: 15px;
+      font-weight: 650;
+      text-shadow: 1px 1px 1px rgba(255, 255, 255, .1);
+    }
+
+    .pg {
+      line-height: 25px;
+      font-size: 20px;
+      margin: 15px;
+      margin-top: 25px;
+      text-shadow: 1px 2px 3px rgba(255, 255, 255, .1);
+    }
+
+    button {
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 25px;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, .2);
+      box-shadow: 3px 3px 5px rgba(25, 30, 130, .30);
+      border-left: 2px solid rgba(255, 255, 255, .2);
+      border-top: 2px solid rgba(255, 255, 255, .2);
+
+    }
+
+    button a {
+      text-decoration: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .me {
+      display: block;
+      margin: 15px;
+      margin-top: 22vh;
+      width: 23rem;
+    }
+
+    img {
+      border-radius: 50%;
+      margin-left: 3rem;
+      width: 250px;
+      height: 250px;
+    }
+
+    h2 {
+      margin-left: 7rem;
+      font-size: 20px;
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, .1);
+
+    }
+
+    p {
+      line-height: 25px;
+      font-size: 17px;
+      margin: 15px;
+      text-shadow: 1px 2px 3px rgba(255, 255, 255, .1);
+
+    }
+
+    form {
+      margin: 55% auto;
+      margin-top: 15vh;
+      width: 22rem;
+      height: 28rem;
+      display: flex;
+      flex-direction: column;
+      background: rgba(255, 255, 255, 0.09);
+      box-shadow: 5px 5px 10px 7px rgba(30, 30, 130, .30);
+      border-radius: 35px;
+      border-left: 2px solid rgba(255, 255, 255, .2);
+      border-top: 2px solid rgba(255, 255, 255, .2);
+    }
+
+    form h1 {
+      margin: 3rem;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+      letter-spacing: 3px;
+      opacity: .5;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    }
+
+    form label {
+      font-size: 20px;
+      color: white;
+      margin-left: 10%;
+      opacity: .6;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 5);
+    }
+
+    form input {
+      width: 80%;
+      margin: 5% auto;
+      margin-bottom: 8%;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+      opacity: .8;
+    }
+
+    form button {
+      width: 50%;
+      margin: 3% auto;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 20px;
+      color: white;
+      padding: 10px 30px;
+      opacity: .7;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, .1);
+      box-shadow: 3px 3px 5px rgba(25, 30, 130, .30);
+      border-left: 2px solid rgba(255, 255, 255, .2);
+      border-top: 2px solid rgba(255, 255, 255, .2);
+
+    }
+
+    form a {
+      font-size: 15px;
+      text-decoration: none;
+      color: white;
+      opacity: .7;
+      margin: 5% auto;
+    }
